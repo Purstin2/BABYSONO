@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system: Dark acolhedor (vibe mãe), com foco em conforto visual e contraste.
+   Todas as cores em HSL e mapeadas para tokens semânticos.
+*/
+
+@layer base {
+  :root {
+    /* Fundo escuro porém acolhedor, com base em azul profundo e violeta suave */
+    --background: 230 40% 10%;
+    --foreground: 0 0% 98%;
+
+    /* Superfícies levemente elevadas e suaves em azul-violeta */
+    --card: 235 32% 16%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 235 32% 16%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Roxo rosado para destaques principais (substitui o vermelho agressivo) */
+    --primary: 280 72% 68%;
+    --primary-foreground: 0 0% 6%;
+
+    /* Lilás suave/dourado frio para ganhos/soluções e chips de destaque */
+    --secondary: 260 80% 80%;
+    --secondary-foreground: 257 32% 18%;
+
+    /* Azul-violeta aconchegante para CTAs principais */
+    --accent: 250 85% 70%;
+    --accent-foreground: 248 32% 14%;
+
+    --destructive: 330 70% 64%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Cinza-azulado suave para textos de apoio */
+    --muted: 230 20% 24%;
+    --muted-foreground: 220 20% 82%;
+
+    /* Bordas discretas em azul profundo */
+    --border: 230 26% 26%;
+    --input: 230 26% 26%;
+    --ring: 260 80% 80%;
+
+    --radius: 0.9rem;
+
+    /* Sidebar (mantida coerente) */
+    --sidebar-background: 230 40% 10%;
+    --sidebar-foreground: 0 0% 94%;
+    --sidebar-primary: 280 72% 68%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 235 32% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 230 26% 26%;
+    --sidebar-ring: 260 80% 80%;
+
+    /* Tokens específicos desta sales page */
+    --cta: 142 72% 40%;
+    --cta-foreground: 0 0% 98%;
+
+    --danger: 330 70% 64%;
+    --danger-foreground: 0 0% 100%;
+
+    --highlight: 260 80% 80%;
+    --highlight-foreground: 257 32% 18%;
+
+    --divider: 231 22% 24%;
+
+    /* Atmosfera & motion: halos suaves em azul e violeta */
+    --gradient-hero: 135deg, hsl(230 40% 14%), hsl(230 40% 10%), hsl(260 45% 16%);
+    --glow-primary: 280 72% 68% / 0.4;
+    --glow-cta: 250 85% 70% / 0.4;
+  }
+
+  .dark {
+    /* Mantém a mesma paleta no modo dark */
+    --background: 230 40% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 235 32% 16%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 235 32% 16%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 280 72% 68%;
+    --primary-foreground: 0 0% 6%;
+
+    --secondary: 260 80% 80%;
+    --secondary-foreground: 257 32% 18%;
+
+    --accent: 250 85% 70%;
+    --accent-foreground: 248 32% 14%;
+
+    --destructive: 330 70% 64%;
+    --destructive-foreground: 0 0% 100%;
+
+    --muted: 230 22% 26%;
+    --muted-foreground: 220 20% 84%;
+
+    --border: 231 24% 26%;
+    --input: 231 24% 26%;
+    --ring: 260 80% 80%;
+
+    --sidebar-background: 230 40% 10%;
+    --sidebar-foreground: 0 0% 94%;
+    --sidebar-primary: 280 72% 68%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 235 32% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 231 24% 26%;
+    --sidebar-ring: 260 80% 80%;
+
+     --cta: 142 72% 40%;
+     --cta-foreground: 0 0% 98%;
+    --danger: 330 70% 64%;
+    --danger-foreground: 0 0% 100%;
+    --highlight: 260 80% 80%;
+    --highlight-foreground: 257 32% 18%;
+    --divider: 231 24% 26%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@layer utilities {
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .story-link {
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-primary after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100;
+    content: "";
+  }
+}
