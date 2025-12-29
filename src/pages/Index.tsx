@@ -1,18 +1,30 @@
 import { useEffect, useState } from "react";
 import {
   AlertTriangle,
+  ArrowDown,
   Baby,
+  BarChart3,
+  BookOpen,
+  CheckCircle,
   CheckCircle2,
   Clock,
+  CreditCard,
   Gift,
   MessageCircle,
+  Mobile,
+  Moon,
+  Music,
+  Search,
+  Shield,
   ShieldCheck,
-  Star
+  Star,
+  XCircle,
+  Zap
 } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import productMockup from "@/assets/product-mockup.webp";
+import productMockup from "@/assets/product-mockup-new.png";
 import depoimento1 from "@/assets/depoimento-1.png";
 import depoimento2 from "@/assets/depoimento-2.png";
 import depoimento3 from "@/assets/depoimento-3.png";
@@ -140,12 +152,19 @@ const Index = () => {
             <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground md:justify-start">
               <Star className="h-4 w-4 text-primary" />
               <span>
-                <span className="font-semibold text-foreground">★★★★★ 4.9/5</span> – Mais de 2.800 mães aprovam
+                <span className="font-semibold text-foreground inline-flex items-center gap-0.5">
+                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                </span> 4.9/5
               </span>
+              <span>– Mais de 2.800 mães aprovam</span>
             </p>
 
-            <p className="mt-2 text-xs font-medium text-muted-foreground md:text-sm">
-              Veja como funciona ↓
+            <p className="mt-2 flex items-center justify-center gap-1 text-xs font-medium text-muted-foreground md:justify-start md:text-sm">
+              Veja como funciona <ArrowDown className="h-3 w-3" />
             </p>
           </div>
         </section>
@@ -157,14 +176,17 @@ const Index = () => {
           <div className="mx-auto max-w-3xl rounded-3xl bg-card/80 px-6 py-8 shadow-lg md:px-10">
             <h2
               id="recebe"
-              className="mb-6 text-center text-2xl font-bold tracking-tight md:text-3xl"
+              className="mb-6 flex items-center justify-center gap-2 text-center text-2xl font-bold tracking-tight md:text-3xl"
             >
-              📱 O Que Você Recebe Imediatamente:
+              <Mobile className="h-6 w-6 text-primary" />
+              O Que Você Recebe Imediatamente:
             </h2>
 
             <div className="grid gap-6 md:grid-cols-3">
               <article className="space-y-2 rounded-2xl p-4">
-                <div className="text-2xl">📖</div>
+                <div className="flex h-10 w-10 items-center justify-center text-primary">
+                  <BookOpen className="h-6 w-6" />
+                </div>
                 <h3 className="text-sm font-semibold md:text-base">Guia Completo Digital</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   64 páginas com passo a passo ilustrado, fácil de seguir mesmo às 3h da manhã.
@@ -172,7 +194,9 @@ const Index = () => {
               </article>
 
               <article className="space-y-2 rounded-2xl p-4">
-                <div className="text-2xl">🎵</div>
+                <div className="flex h-10 w-10 items-center justify-center text-primary">
+                  <Music className="h-6 w-6" />
+                </div>
                 <h3 className="text-sm font-semibold md:text-base">Músicas Relaxantes</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Use as músicas especiais que os bebês adoram para dormir.
@@ -180,7 +204,9 @@ const Index = () => {
               </article>
 
               <article className="space-y-2 rounded-2xl p-4">
-                <div className="text-2xl">📊</div>
+                <div className="flex h-10 w-10 items-center justify-center text-primary">
+                  <BarChart3 className="h-6 w-6" />
+                </div>
                 <h3 className="text-sm font-semibold md:text-base">Planilha de Rotina</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Template personalizável para organizar o sono do seu bebê por idade.
@@ -198,7 +224,10 @@ const Index = () => {
             <Button variant="cta" size="lg" className="h-14 w-full max-w-sm rounded-full hover-scale" asChild>
               <a href={CHECKOUT_URL}>QUERO TER ACESSO AGORA</a>
             </Button>
-            <p className="text-xs text-muted-foreground">🛡️ Garantia de 7 dias</p>
+            <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
+              <Shield className="h-3.5 w-3.5 text-primary" />
+              Garantia de 7 dias
+            </p>
           </div>
         </section>
 
@@ -247,7 +276,10 @@ const Index = () => {
 
             <div className="grid gap-0 overflow-hidden rounded-2xl border border-border/80 md:grid-cols-2 md:gap-0">
               <article className="space-y-3 p-5 md:border-r md:border-border/80 md:pb-5 md:pt-5 border-b border-border/80 md:border-b-0">
-                <h3 className="text-base font-semibold md:text-lg">❌ Sem o Método:</h3>
+                <h3 className="flex items-center gap-2 text-base font-semibold md:text-lg">
+                  <XCircle className="h-5 w-5 text-red-500" />
+                  Sem o Método:
+                </h3>
                 <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
                   <li>Acordar 5-8x por noite.</li>
                   <li>Exaustão extrema no dia seguinte.</li>
@@ -258,7 +290,10 @@ const Index = () => {
               </article>
 
               <article className="space-y-3 p-5">
-                <h3 className="text-base font-semibold md:text-lg">✅ Com o Método:</h3>
+                <h3 className="flex items-center gap-2 text-base font-semibold md:text-lg">
+                  <CheckCircle className="h-5 w-5 text-green-500" />
+                  Com o Método:
+                </h3>
                 <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
                   <li>Bebê dorme 6-8h seguidas.</li>
                   <li>Você acorda descansada.</li>
@@ -290,7 +325,9 @@ const Index = () => {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Descubra qual dos 7 erros mais comuns está sabotando o sono do seu bebê.
               </p>
-              <div className="mt-auto text-xl">🔍</div>
+              <div className="mt-auto flex h-8 w-8 items-center justify-center text-primary">
+                <Search className="h-5 w-5" />
+              </div>
             </article>
 
             <article className="flex flex-col gap-3 rounded-2xl bg-card/80 p-5">
@@ -301,7 +338,9 @@ const Index = () => {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Siga o protocolo específico para a idade do seu bebê (passo a passo incluído).
               </p>
-              <div className="mt-auto text-xl">⚡</div>
+              <div className="mt-auto flex h-8 w-8 items-center justify-center text-primary">
+                <Zap className="h-5 w-5" />
+              </div>
             </article>
 
             <article className="flex flex-col gap-3 rounded-2xl bg-card/80 p-5">
@@ -312,7 +351,9 @@ const Index = () => {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Em 3-7 dias você verá melhoras significativas. Sem choro, sem trauma, com amor.
               </p>
-              <div className="mt-auto text-xl">😴</div>
+              <div className="mt-auto flex h-8 w-8 items-center justify-center text-primary">
+                <Moon className="h-5 w-5" />
+              </div>
             </article>
           </div>
         </section>
@@ -336,7 +377,7 @@ const Index = () => {
             <div className="mb-6 flex items-center gap-2 text-primary">
               <Gift className="h-5 w-5" />
               <h2 id="bonus" className="text-xl font-bold tracking-tight md:text-2xl">
-                🎁 Comprando Agora, Você Ganha 2 Bônus Exclusivos:
+                Comprando Agora, Você Ganha 2 Bônus Exclusivos:
               </h2>
             </div>
 
@@ -482,8 +523,21 @@ const Index = () => {
               </Button>
             </div>
 
-            <p className="mt-3 text-xs text-muted-foreground">
-              🛡️ Garantia de 7 dias | ⚡ Acesso imediato | 💳 Pagamento seguro
+            <p className="mt-3 flex flex-wrap items-center justify-center gap-2 text-xs text-muted-foreground">
+              <span className="flex items-center gap-1">
+                <Shield className="h-3.5 w-3.5 text-primary" />
+                Garantia de 7 dias
+              </span>
+              <span>|</span>
+              <span className="flex items-center gap-1">
+                <Zap className="h-3.5 w-3.5 text-primary" />
+                Acesso imediato
+              </span>
+              <span>|</span>
+              <span className="flex items-center gap-1">
+                <CreditCard className="h-3.5 w-3.5 text-primary" />
+                Pagamento seguro
+              </span>
             </p>
 
           </div>
@@ -575,8 +629,8 @@ const Index = () => {
         <section aria-labelledby="garantia" className="space-y-8 px-5 md:px-8">
           <div className="mx-auto max-w-3xl rounded-3xl bg-card/80 px-6 py-8 text-center shadow-xl md:px-10 md:py-10">
             <div className="mb-4 flex justify-center">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20 text-4xl">
-                🛡️
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20">
+                <Shield className="h-10 w-10 text-primary" />
               </div>
             </div>
 
