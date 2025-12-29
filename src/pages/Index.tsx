@@ -151,11 +151,11 @@ const Index = () => {
 
             <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground md:justify-start">
               <span className="inline-flex items-center gap-0.5">
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               </span>
               <span className="font-semibold text-foreground">4.9/5</span>
               <span>– Mais de 2.800 mães aprovam</span>
@@ -380,31 +380,31 @@ const Index = () => {
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
-              <article className="space-y-2 rounded-2xl border border-primary/50 p-4">
-                <h3 className="text-sm font-semibold md:text-base">Bônus #1 - Playlist Spotify para Bebês</h3>
-                <p className="text-xs font-semibold text-muted-foreground">Valor: R$ 47,00</p>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+              <article className="space-y-3 rounded-2xl border border-primary/50 p-5">
+                <h3 className="text-base font-bold md:text-lg">Bônus #1 - Playlist Spotify para Bebês</h3>
+                <p className="text-sm font-semibold text-muted-foreground">Valor: R$ 47,00</p>
+                <p className="text-base leading-relaxed text-muted-foreground">
                   Acesse nossa playlist exclusiva com músicas e sons especialmente selecionados para acalmar e ajudar seu bebê a adormecer profundamente. Compilada com base em estudos científicos sobre o sono infantil.
                 </p>
-                <p className="text-xs font-semibold text-primary">GRÁTIS HOJE</p>
+                <p className="text-sm font-bold text-primary">GRÁTIS HOJE</p>
               </article>
 
-              <article className="space-y-2 rounded-2xl border border-primary/50 p-4">
-                <h3 className="text-sm font-semibold md:text-base">Bônus #2 - Checklist Completo</h3>
-                <p className="text-xs font-semibold text-muted-foreground">Valor: R$ 37,00</p>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+              <article className="space-y-3 rounded-2xl border border-primary/50 p-5">
+                <h3 className="text-base font-bold md:text-lg">Bônus #2 - Checklist Completo</h3>
+                <p className="text-sm font-semibold text-muted-foreground">Valor: R$ 37,00</p>
+                <p className="text-base leading-relaxed text-muted-foreground">
                   Use o checklist infalível para ter a noite perfeita para o seu bebê.
                 </p>
-                <p className="text-xs font-semibold text-primary">GRÁTIS HOJE</p>
+                <p className="text-sm font-bold text-primary">GRÁTIS HOJE</p>
               </article>
 
-              <article className="space-y-2 rounded-2xl border border-primary/50 p-4">
-                <h3 className="text-sm font-semibold md:text-base">Bônus #3 - Suporte Vitalício</h3>
-                <p className="text-xs font-semibold text-muted-foreground">Valor: Inestimável</p>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+              <article className="space-y-3 rounded-2xl border border-primary/50 p-5">
+                <h3 className="text-base font-bold md:text-lg">Bônus #3 - Suporte Vitalício</h3>
+                <p className="text-sm font-semibold text-muted-foreground">Valor: Inestimável</p>
+                <p className="text-base leading-relaxed text-muted-foreground">
                   Tire dúvidas direto comigo sempre que precisar. Você nunca estará sozinha nessa jornada.
                 </p>
-                <p className="text-xs font-semibold text-primary">INCLUSO</p>
+                <p className="text-sm font-bold text-primary">INCLUSO</p>
               </article>
             </div>
           </div>
@@ -479,24 +479,32 @@ const Index = () => {
           aria-labelledby="cta-final"
           className="px-5 py-10 text-center md:px-8 md:py-12"
         >
-          <div className="mx-auto max-w-xl space-y-6 rounded-3xl bg-card/80 px-6 py-8 shadow-xl md:px-10 md:py-10">
+          <div className="mx-auto max-w-xl space-y-6 rounded-3xl border-4 border-green-500 bg-card/80 px-6 py-8 shadow-xl md:px-10 md:py-10">
             <h2 id="cta-final" className="text-2xl font-bold tracking-tight md:text-3xl">
               Tudo o Que Você Vai Receber Hoje Por Apenas R$ 19,90
             </h2>
 
-            <p className="mx-auto max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
-              Acesso imediato ao método completo Noite da Mãe para finalmente ter noites tranquilas com seu bebê.
-            </p>
-
             <div className="mt-4 h-px w-full bg-border/70" />
 
-            <div className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-              <p className="font-semibold text-foreground">Você recebe imediatamente:</p>
-              <ul className="space-y-1 text-left text-xs md:text-sm">
-                <li>• Ebook completo com passo a passo detalhado.</li>
-                <li>• Planilha rastreadora de sono para organizar a rotina.</li>
-                <li>• Checklist imprimível para não esquecer nenhum passo.</li>
-                <li>• Playlist exclusiva de White Noise para acalmar o bebê.</li>
+            <div className="mt-4 space-y-3">
+              <p className="text-base font-semibold text-foreground md:text-lg">Você recebe imediatamente:</p>
+              <ul className="space-y-2.5 text-left text-sm leading-relaxed md:text-base">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-green-500">✓</span>
+                  <span className="font-medium">Ebook completo com passo a passo detalhado.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-green-500">✓</span>
+                  <span className="font-medium">Planilha rastreadora de sono para organizar a rotina.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-green-500">✓</span>
+                  <span className="font-medium">Checklist imprimível para não esquecer nenhum passo.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 text-green-500">✓</span>
+                  <span className="font-medium">Playlist exclusiva de White Noise para acalmar o bebê.</span>
+                </li>
               </ul>
             </div>
 
@@ -626,9 +634,28 @@ const Index = () => {
         {/* ===================================================== */}
         <section aria-labelledby="garantia" className="space-y-8 px-5 md:px-8">
           <div className="mx-auto max-w-3xl rounded-3xl bg-card/80 px-6 py-8 text-center shadow-xl md:px-10 md:py-10">
-            <div className="mb-4 flex justify-center">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/20">
-                <Shield className="h-10 w-10 text-primary" />
+            <div className="mb-6 flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+              <div className="flex flex-col items-center gap-2">
+                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-100 border-2 border-green-500">
+                  <Shield className="h-10 w-10 text-green-600" />
+                </div>
+                <p className="text-sm font-bold text-foreground">Garantia de 7 Dias</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="relative flex h-20 w-20 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg">
+                  <div className="text-center text-white">
+                    <p className="text-[9px] font-extrabold leading-tight tracking-tight">RECLAME</p>
+                    <p className="text-[9px] font-extrabold leading-tight tracking-tight">AQUI</p>
+                    <div className="mt-0.5 flex items-center justify-center gap-0.5">
+                      <Star className="h-2 w-2 fill-yellow-300 text-yellow-300" />
+                      <Star className="h-2 w-2 fill-yellow-300 text-yellow-300" />
+                      <Star className="h-2 w-2 fill-yellow-300 text-yellow-300" />
+                      <Star className="h-2 w-2 fill-yellow-300 text-yellow-300" />
+                      <Star className="h-2 w-2 fill-yellow-300 text-yellow-300" />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-sm font-bold text-foreground">Reclame Aqui</p>
               </div>
             </div>
 
