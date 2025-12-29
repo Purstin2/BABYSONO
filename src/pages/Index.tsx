@@ -150,16 +150,14 @@ const Index = () => {
             </p>
 
             <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground md:justify-start">
-              <Star className="h-4 w-4 text-primary" />
-              <span>
-                <span className="font-semibold text-foreground inline-flex items-center gap-0.5">
-                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                  <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-                </span> 4.9/5
+              <span className="inline-flex items-center gap-0.5">
+                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
+                <Star className="h-3.5 w-3.5 fill-primary text-primary" />
               </span>
+              <span className="font-semibold text-foreground">4.9/5</span>
               <span>– Mais de 2.800 mães aprovam</span>
             </p>
 
