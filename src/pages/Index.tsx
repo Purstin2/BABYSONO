@@ -11,7 +11,7 @@ import {
   CreditCard,
   Gift,
   MessageCircle,
-  Mobile,
+  Smartphone,
   Moon,
   Music,
   Search,
@@ -33,6 +33,7 @@ import momBabyBg from "@/assets/mom-baby-bg.png";
 const CHECKOUT_URL = "https://www.ggcheckout.com/checkout/v2/isVXSWGR02zQWeJWL19s";
 
 const Index = () => {
+  console.log("Index component rendered");
   const depoimentos = [depoimento1, depoimento2, depoimento3, depoimento1, depoimento2, depoimento3];
   const notificacoes = [
     "Maria (SP) acabou de garantir o Método Noite da Mãe.",
@@ -104,6 +105,7 @@ const Index = () => {
       style={{
         backgroundImage:
           "linear-gradient(to bottom, hsl(var(--background) / 0.96), hsl(var(--background) / 0.96)), url('" + momBabyBg + "')",
+        backgroundColor: "hsl(var(--background))",
       }}
     >
       <header className="sticky top-0 z-30 backdrop-blur">
@@ -176,7 +178,7 @@ const Index = () => {
               id="recebe"
               className="mb-6 flex items-center justify-center gap-2 text-center text-2xl font-bold tracking-tight md:text-3xl"
             >
-              <Mobile className="h-6 w-6 text-primary" />
+              <Smartphone className="h-6 w-6 text-primary" />
               O Que Você Recebe Imediatamente:
             </h2>
 

@@ -9,7 +9,7 @@
 @layer base {
   :root {
     /* Fundo escuro porém acolhedor, com base em azul profundo e violeta suave */
-    --background: 230 40% 10%;
+    --background: 230 35% 15%;
     --foreground: 0 0% 98%;
 
     /* Superfícies levemente elevadas e suaves em azul-violeta */
@@ -46,7 +46,7 @@
     --radius: 0.9rem;
 
     /* Sidebar (mantida coerente) */
-    --sidebar-background: 230 40% 10%;
+    --sidebar-background: 230 35% 15%;
     --sidebar-foreground: 0 0% 94%;
     --sidebar-primary: 280 72% 68%;
     --sidebar-primary-foreground: 0 0% 6%;
@@ -75,7 +75,7 @@
 
   .dark {
     /* Mantém a mesma paleta no modo dark */
-    --background: 230 40% 10%;
+    --background: 230 35% 15%;
     --foreground: 0 0% 98%;
 
     --card: 235 32% 16%;
@@ -103,7 +103,7 @@
     --input: 231 24% 26%;
     --ring: 260 80% 80%;
 
-    --sidebar-background: 230 40% 10%;
+    --sidebar-background: 230 35% 15%;
     --sidebar-foreground: 0 0% 94%;
     --sidebar-primary: 280 72% 68%;
     --sidebar-primary-foreground: 0 0% 6%;
@@ -127,8 +127,23 @@
     @apply border-border;
   }
 
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
   }
 
   html {
