@@ -90,7 +90,7 @@ const Index = () => {
         <div className="flex items-center justify-center gap-2 bg-red-600 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-white">
           <span className="inline-flex items-center gap-1">
             <AlertTriangle className="h-4 w-4" />
-            OFERTA LIMITADA: O PREÇO SUBIRÁ EM
+            Oferta válida até:
           </span>
           <CountdownTimer />
         </div>
@@ -105,14 +105,14 @@ const Index = () => {
 
           <div className="relative space-y-6 text-center md:text-left">
             <p className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary/20 via-accent/15 to-primary/20 border border-primary/30 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground backdrop-blur-sm">
-              <Baby className="h-3.5 w-3.5 text-primary" /> Método para bebês de 0 a 12 meses
+              <Baby className="h-3.5 w-3.5 text-primary" /> Método para bebês de 0 a 24 meses
             </p>
 
             <h1
               id="hero-heading"
               className="text-balance text-3xl font-extrabold leading-tight tracking-tight md:text-4xl lg:text-5xl"
             >
-              <span className="block">Por Que Seu Bebê Acorda 5x Por Noite?</span>
+              <span className="block">Faça seu bebê dormir 8 Horas seguidas com o segredo das Pediatras</span>
             </h1>
 
             <figure className="mx-auto max-w-xs md:max-w-sm">
@@ -122,12 +122,6 @@ const Index = () => {
                 className="w-full rounded-[1.5rem] object-cover"
               />
             </figure>
-
-            <p className="text-balance text-sm leading-relaxed text-muted-foreground md:text-base">
-              O Método Simples Que Fez <span className="font-semibold text-primary">2.847 Mães</span> Conseguirem
-              <span className="font-semibold text-primary"> 8 Horas de Sono Seguidas</span> em menos de 7 dias – sem
-              deixar o bebê chorando.
-            </p>
 
             <p className="flex items-center justify-center gap-2 text-sm text-muted-foreground md:justify-start">
               <span className="inline-flex items-center gap-0.5">
@@ -154,83 +148,45 @@ const Index = () => {
           <div className="mx-auto max-w-3xl rounded-3xl bg-card/80 px-6 py-8 shadow-lg md:px-10">
             <h2
               id="recebe"
-              className="mb-6 flex items-center justify-center gap-2 text-center text-2xl font-bold tracking-tight md:text-3xl"
+              className="mb-6 text-center text-2xl font-bold tracking-tight md:text-3xl"
             >
-              <Moon className="h-6 w-6 text-primary" />
               O Método Sono Tranquilo É Para Você Que:
             </h2>
 
-            <div className="space-y-4">
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Acorda 5x por noite e não aguenta mais
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    Você está exausta, mal consegue cuidar do seu bebê durante o dia e está no limite das suas forças.
-                  </p>
-                </div>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-card/60 p-4">
+                <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                <p className="text-sm font-semibold text-foreground md:text-base">
+                  Acorda 5x por noite e não aguenta mais
+                </p>
               </div>
 
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Sente culpa por não conseguir fazer seu bebê dormir
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    Você se culpa toda noite, pensa que está fazendo algo errado e se sente uma mãe ruim.
-                  </p>
-                </div>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-card/60 p-4">
+                <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                <p className="text-sm font-semibold text-foreground md:text-base">
+                  Sente culpa por não conseguir fazer seu bebê dormir
+                </p>
               </div>
 
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Está com depressão pós-parto ou ansiedade por falta de sono
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    A exaustão extrema está afetando sua saúde mental e você mal reconhece a mulher que era antes.
-                  </p>
-                </div>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-card/60 p-4">
+                <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                <p className="text-sm font-semibold text-foreground md:text-base">
+                  Está com depressão pós-parto ou ansiedade por falta de sono
+                </p>
               </div>
 
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Seu relacionamento está sendo afetado pela falta de sono
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    Você não tem mais paciência para o seu parceiro, a falta de intimidade está pesando e você só quer dormir.
-                  </p>
-                </div>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-card/60 p-4">
+                <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                <p className="text-sm font-semibold text-foreground md:text-base">
+                  Seu relacionamento está sendo afetado pela falta de sono
+                </p>
               </div>
 
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Tem medo de deixar o bebê chorar e não sabe o que fazer
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    Você quer uma solução gentil, sem traumas, mas não encontra um método que realmente funcione sem chorar.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <CheckCircle className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold text-foreground md:text-base">
-                    Já tentou de tudo e nada funcionou
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                    Você leu todos os livros, tentou todos os métodos, consultou pediatras... e ainda está acordando várias vezes por noite.
-                  </p>
-                </div>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-card/60 p-4">
+                <CheckCircle className="h-5 w-5 flex-shrink-0 text-primary" />
+                <p className="text-sm font-semibold text-foreground md:text-base">
+                  Já tentou de tudo e nada funcionou
+                </p>
               </div>
             </div>
           </div>
@@ -254,14 +210,14 @@ const Index = () => {
               }}
               className="relative w-full"
             >
-              <CarouselContent className="-ml-3 md:-ml-6">
+              <CarouselContent className="-ml-2 md:-ml-4">
                 {depoimentos.map((imgSrc, index) => (
-                  <CarouselItem key={index} className="pl-3 md:pl-6 basis-1/2">
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-[85%] md:basis-[60%]">
                     <article className="overflow-hidden rounded-2xl border-2 border-border/80 shadow-lg">
                       <img
                         src={imgSrc}
                         alt={`Depoimento real de mãe ${index + 1} sobre o método para o bebê dormir a noite toda`}
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain"
                         loading="lazy"
                       />
                     </article>
@@ -397,74 +353,77 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              <article className="relative space-y-4 rounded-2xl border-2 border-primary/50 bg-card/90 p-6 shadow-lg backdrop-blur-sm">
+            <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-6">
+              <article className="relative space-y-4 rounded-2xl border border-border/40 bg-card/80 p-6 shadow-md">
                 <div className="absolute -top-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
                   1
                 </div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
-                  <Music className="h-6 w-6" />
+                <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-card/60 border border-border/40 overflow-hidden">
+                  <img 
+                    src="https://via.placeholder.com/80x80?text=Mockup+1" 
+                    alt="Mockup produto bônus 1"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-lg font-bold text-foreground md:text-xl">
+                  <h3 className="mb-3 text-lg font-bold text-foreground md:text-xl">
                     Playlist Premium Que Dorme Até 90% Dos Bebês
                   </h3>
-                  <p className="mb-3 text-sm font-semibold text-primary line-through opacity-60">
-                    Valor: R$ 97,00
-                  </p>
+                  <div className="flex items-baseline gap-2">
+                    <p className="text-2xl font-extrabold text-primary">R$ 0,00</p>
+                  </div>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   A playlist mais poderosa que já existiu. Selecionada a dedo após testar centenas de músicas e sons com mais de 2.800 bebês. Frequências específicas que acalmam o sistema nervoso, ritmos que imitam o batimento cardíaco da mãe, e melodias cientificamente comprovadas para induzir sono profundo. <span className="font-semibold text-foreground">9 em cada 10 bebês dormem com essa playlist em menos de 15 minutos.</span> Você vai colocar e seu bebê vai simplesmente... dormir.
                 </p>
-                <div className="rounded-lg bg-green-500/20 px-3 py-2 text-center">
-                  <p className="text-sm font-bold text-green-600">100% GRÁTIS HOJE</p>
-                </div>
               </article>
 
-              <article className="relative space-y-4 rounded-2xl border-2 border-primary/50 bg-card/90 p-6 shadow-lg backdrop-blur-sm">
+              <article className="relative space-y-4 rounded-2xl border border-border/40 bg-card/80 p-6 shadow-md">
                 <div className="absolute -top-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
                   2
                 </div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
-                  <CheckCircle className="h-6 w-6" />
+                <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-card/60 border border-border/40 overflow-hidden">
+                  <img 
+                    src="https://via.placeholder.com/80x80?text=Mockup+2" 
+                    alt="Mockup produto bônus 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-lg font-bold text-foreground md:text-xl">
+                  <h3 className="mb-3 text-lg font-bold text-foreground md:text-xl">
                     Checklist Infalível: Como Preparar Seu Bebê Antes De Dormir
                   </h3>
-                  <p className="mb-3 text-sm font-semibold text-primary line-through opacity-60">
-                    Valor: R$ 67,00
-                  </p>
+                  <div className="flex items-baseline gap-2">
+                    <p className="text-2xl font-extrabold text-primary">R$ 0,00</p>
+                  </div>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   O passo a passo exato que você precisa seguir TODA noite para garantir que seu bebê durma. Não precisa pensar, não precisa lembrar de nada. É só seguir o checklist. <span className="font-semibold text-foreground">Criado com base nos hábitos de mais de 2.800 mães que conseguiram fazer seus bebês dormirem.</span> Você vai imprimir, colar na parede do quarto e nunca mais vai se perguntar "o que eu esqueci de fazer?". É o seu guia para a noite perfeita.
                 </p>
-                <div className="rounded-lg bg-green-500/20 px-3 py-2 text-center">
-                  <p className="text-sm font-bold text-green-600">100% GRÁTIS HOJE</p>
-                </div>
               </article>
 
-              <article className="relative space-y-4 rounded-2xl border-2 border-primary/50 bg-card/90 p-6 shadow-lg backdrop-blur-sm">
+              <article className="relative space-y-4 rounded-2xl border border-border/40 bg-card/80 p-6 shadow-md">
                 <div className="absolute -top-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
                   3
                 </div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
-                  <BarChart3 className="h-6 w-6" />
+                <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-card/60 border border-border/40 overflow-hidden">
+                  <img 
+                    src="https://via.placeholder.com/80x80?text=Mockup+3" 
+                    alt="Mockup produto bônus 3"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-lg font-bold text-foreground md:text-xl">
+                  <h3 className="mb-3 text-lg font-bold text-foreground md:text-xl">
                     Planilha De Acompanhamento: O Sonho Do Seu Bebê Em Números
                   </h3>
-                  <p className="mb-3 text-sm font-semibold text-primary line-through opacity-60">
-                    Valor: R$ 57,00
-                  </p>
+                  <div className="flex items-baseline gap-2">
+                    <p className="text-2xl font-extrabold text-primary">R$ 0,00</p>
+                  </div>
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   Acompanhe a evolução do sono do seu bebê dia a dia. Anote quantas vezes acordou, quanto tempo dormiu, o que funcionou e o que não funcionou. <span className="font-semibold text-foreground">Em 7 dias você vai ver o progresso real.</span> Mães que usam essa planilha têm 3x mais chances de sucesso porque conseguem identificar padrões e ajustar o método rapidamente. Você vai ver os números melhorando e vai ter a prova de que está funcionando.
                 </p>
-                <div className="rounded-lg bg-green-500/20 px-3 py-2 text-center">
-                  <p className="text-sm font-bold text-green-600">100% GRÁTIS HOJE</p>
-                </div>
               </article>
             </div>
 
