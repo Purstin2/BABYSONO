@@ -8,12 +8,12 @@
 
 @layer base {
   :root {
-    /* Fundo escuro porém acolhedor, com base em azul profundo e violeta suave */
-    --background: 230 35% 15%;
+    /* Fundo mais claro e leve, com base em azul profundo e violeta suave */
+    --background: 230 30% 22%;
     --foreground: 0 0% 98%;
 
     /* Superfícies levemente elevadas e suaves em azul-violeta */
-    --card: 235 32% 16%;
+    --card: 235 28% 24%;
     --card-foreground: 0 0% 98%;
 
     --popover: 235 32% 16%;
@@ -46,7 +46,7 @@
     --radius: 0.9rem;
 
     /* Sidebar (mantida coerente) */
-    --sidebar-background: 230 35% 15%;
+    --sidebar-background: 230 30% 22%;
     --sidebar-foreground: 0 0% 94%;
     --sidebar-primary: 280 72% 68%;
     --sidebar-primary-foreground: 0 0% 6%;
@@ -75,10 +75,10 @@
 
   .dark {
     /* Mantém a mesma paleta no modo dark */
-    --background: 230 35% 15%;
+    --background: 230 30% 22%;
     --foreground: 0 0% 98%;
 
-    --card: 235 32% 16%;
+    --card: 235 28% 24%;
     --card-foreground: 0 0% 98%;
 
     --popover: 235 32% 16%;
@@ -103,7 +103,7 @@
     --input: 231 24% 26%;
     --ring: 260 80% 80%;
 
-    --sidebar-background: 230 35% 15%;
+    --sidebar-background: 230 30% 22%;
     --sidebar-foreground: 0 0% 94%;
     --sidebar-primary: 280 72% 68%;
     --sidebar-primary-foreground: 0 0% 6%;
